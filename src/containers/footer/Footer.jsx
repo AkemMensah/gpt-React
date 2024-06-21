@@ -14,7 +14,8 @@ const Footer = () => {
       </div>
       <div className="gpt5__footer-links">
         <div className="gpt5__footer-links_logo">
-          <img src={gpt3Logo} alt="logo" />
+          {/* <img src={gpt3Logo} alt="logo" /> */}
+          <h1>GPT-5</h1>
           <p>All Rights Reserved</p>
         </div>
         <div className="gpt5__footer-links_div">
