@@ -1,6 +1,6 @@
 import './App.css';
 
-import { Blog, Footer, Possibility, Features, WhatGPT3,Header} from './containers';
+import { Blog, Footer, Possibility, Features, WhatGPT5,Header} from './containers';
 import { CTA,Brand,Navbar,} from './components';
 
 import React from 'react'
@@ -13,7 +13,7 @@ const App = () => {
           < Header />
       </div>
       <Brand />
-      <WhatGPT3 />
+      <WhatGPT5 />
       <Features />
       <Possibility />
       <CTA />
