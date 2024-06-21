@@ -1,7 +1,7 @@
 import './App.css';
 
 import { Blog, Footer, Possibility, Features, WhatGPT3,Header} from './containers';
-import { CTA,Brand,Navbar, Feature, } from './components';
+import { CTA,Brand,Navbar,} from './components';
 
 import React from 'react'
 
@@ -23,5 +23,5 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
 
