@@ -72,6 +72,7 @@
     padding: 2rem;
     position: absolute;
     top: 40px;
+    right: -350%;
     margin-top: 1rem;
     min-width: 210px;
     border-radius: 5px;
