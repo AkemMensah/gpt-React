@@ -99,11 +99,11 @@
 
 @media screen and (max-width:900px){
     .gpt5__footer-links{
-        /* flex-wrap: wrap; */
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
 }
+
 @media screen and (max-width:650px){
     .gpt5__footer-links{
         flex-wrap: wrap;
