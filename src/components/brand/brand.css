@@ -1,10 +1,10 @@
-.gpt3__brand{
+.gpt5__brand{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.gpt3__brand div{
+.gpt5__brand div{
     flex: 1;
     max-width: 150px;
     /* min-width: 120px; */
