@@ -1,8 +1,8 @@
 import React from 'react';
 import './navbar.css';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/logo.svg';
-import { useState } from 'react';
+// import logo from '../../assets/logo.svg';
+import { useState, useEffect } from 'react';
 
 const Menu = ()=>(
       <>
@@ -10,7 +10,7 @@ const Menu = ()=>(
               <a href="#home">Home</a>
             </p>
             <p>
-              <a href="#whatgpt3">What is GPT3?</a>
+              <a href="#whatgpt5">What is GPT5?</a>
             </p>
             <p>
               <a href="#possibility">Open AI</a>
@@ -24,12 +24,30 @@ const Menu = ()=>(
           </>
 )
 const Navbar = () => {
-  const [toggleMenu,setToggleMenu] = useState(false)
+  const [toggleMenu,setToggleMenu] = useState(false);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='gpt5__navbar'>
+    <div className={`gpt5__navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className='gpt5__navbar-links'>
         <div className='gpt5__navbar-links_logo'>
-          <img src={logo} alt="logo" />
+          {/* <img src={logo} alt="logo" /> */}
+          <h1>GPT-5</h1>
         </div>
         <div className='gpt5__navbar-links_container'>
             <Menu />
